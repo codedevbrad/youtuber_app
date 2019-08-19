@@ -1,0 +1,56 @@
+
+@import "./variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+
+* { -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4, a, li, p, input, label, textarea, button {
+  font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.87em;
+}
+
+div { font-family: 'Montserrat', sans-serif;  }
+
+p , li , a { font-weight: 400; font-size: 0.8em; }
+
+/* -- html content -- */
+
+html, body { padding: 0; margin: 0;  width: 100%;  color: black;   }
+
+html    { height: 100%; }
+body    { min-height: 100%; height: 100%;  max-height: 100%;  }
+
+a       { text-decoration: none; color: black; cursor: pointer; }
+a:hover { text-decoration: none; }
+
+svg     { pointer-events: none; }
+
+
+/* yellow button */
+
+.btn-design { text-align: center; padding: 10px 45px; color: black; font-size: 0.75em; cursor: pointer;
+              background:#ffff70; display: inline-block; outline: none; border: none;
+}
+
+.btn-design > h3 { font-weight: 400; }
+
+/* -- error message -- */
+
+.app-error-msg {  position: fixed;  width: 200px; min-height: 40px;  padding:10px; background: white;
+                  z-index: 9999; margin: 0 auto; left: 0; right: 0; box-shadow: $primary_shadow;
+                  border-radius: 6px; margin-top: 5px;
+
+                  p { font-size: 0.6em; }
+               }
+
+
+/* -- main app -- */
+
+body, #root  { width: 100%; height: 100%; }
+
+.App      { width: 75%; margin: 0 auto; height: 100%; text-align: center; }
+
+.App-main { text-align: left; width: 100%; }
+
+.App > header { width: 100%; background: white;
+                border-bottom: $primary_Border; padding: 10px; z-index: 9999;
+              }

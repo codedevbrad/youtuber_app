@@ -1,0 +1,71 @@
+
+@import "../css_app/variables.scss";
+
+
+.yt-interests { width: 100%; background: #f7f7ff; padding: 10px 0px; height: 100%; margin-top: 15px; }
+
+
+.yt_interests > h2 { margin-bottom: 10px; }
+
+/* interests */
+
+ul#interests_populate   { padding: 10px 0; max-height: 260px; overflow: hidden; overflow-y: scroll; }
+
+ul#interests_populate > li:last-child { margin-bottom: 25px; }
+
+li.each-interest        { cursor: pointer; font-size: 0.6em; padding: 7px; margin: 8px 0;
+                          background: #eaefff; margin-right: 10px;
+                        }
+
+.each-interest#selected { background: #b1b6ff; }
+
+/* --- special --- */
+
+.special-contain  { width: 100%; background: #f7f7ff; position: relative;   padding: 35px 20px;
+                    margin: 15px 0; padding-right: 15px; height: 100%;
+                  }
+
+.special-contain > section      { border-radius: 8px; padding: 10px 20px; box-shadow: $primary_shadow; }
+
+.special-contain > section > h2 { padding-top: 5px; }
+
+
+
+
+/* --- left area --- */
+
+section.right-content-spaced   { width: 25%; position: absolute; left: 37px; top: 10px;
+                                 background: white; min-height: 200px; z-index: 8000;
+                               }
+
+ /* --- right area --- */
+
+ .special-contain > section.left-content-full {
+             width: 100%; background: white; display: inline-block;  position: relative; overflow-y: auto;
+             overflow-y: hidden;
+   }
+
+ section.special-left-content {
+                                 width: 72%; background: white; display: inline-block; float: right;
+                                 padding: 0 20px 0 45px;
+                              }
+
+ .special-contain section.special-left-content > ul > li { font-size: 0.6em; font-weight: 400; }
+
+
+
+/* choosing a new artist popup screen */
+
+div.content-area-popup-contain  { padding: 10px 0;  border-bottom: 1px solid #efefef; }
+
+div.content-area-popup-contain > .content-title {
+      display: inline-block; font-size: 0.72em; font-weight: 400;
+  }
+div.content-area-popup-contain > div.content-popup-btn {
+      display: inline-block; float: right; padding-right: 10px; font-size: 0.8em;
+      padding: 4px 14px;
+}
+
+div.interest_input_contain > input {
+   width: 100%; font-size: 0.6em; padding: 7px 8px; margin: 6px 0; font-weight: 400; color: black;
+}
