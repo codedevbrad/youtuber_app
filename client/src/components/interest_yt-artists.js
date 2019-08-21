@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './interest_artists.scss';
 
-var API_KEY = 'AIzaSyDbhPrYOQs79wS_Y8WOq5WCKeGJ8nQbVSA';
+var API_KEY = 'add key';
 
 
 class Interest_artists extends Component {
